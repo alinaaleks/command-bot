@@ -3,11 +3,13 @@ import logging
 
 from telegram.ext import (
     Application,
-    CommandHandler
+    CommandHandler,
+    CallbackQueryHandler
 )
 
-from commands.basic import start, help_command
-from commands.git_help import status, branches, log, diff
+from commands.basic import start
+from commands.menu_handlers import menu_router
+from commands.search import find
 
 
 logging.basicConfig(
@@ -25,15 +27,12 @@ def main():
 
     app = Application.builder().token(token).build()
 
-    # basic
+    # command handlers
     app.add_handler(CommandHandler("start", start))
-    app.add_handler(CommandHandler("help", help_command))
+    app.add_handler(CommandHandler("find", find))
 
-    # git commands
-    app.add_handler(CommandHandler("status", status))
-    app.add_handler(CommandHandler("branches", branches))
-    app.add_handler(CommandHandler("log", log))
-    app.add_handler(CommandHandler("diff", diff))
+    # menu button handler
+    app.add_handler(CallbackQueryHandler(menu_router))
 
     print("Bot is running...")
 
