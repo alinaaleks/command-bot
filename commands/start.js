@@ -3,6 +3,7 @@ var keyboard = [
     [{text: "Python", callback_data: "/python"}, {text: "SQL", callback_data: "/sql"}],
     [{text: "ANACONDA", callback_data: "/conda"}],
     [{text: "Docker", callback_data: "/docker"}, {text: "VS Code", callback_data: "/vscode"}],
+    [{text: "WebDev", callback_data: "/webdev"}],
     [{text: "🔎  Search", callback_data: "/search"}],
 ];
 

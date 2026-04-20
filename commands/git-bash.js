@@ -7,7 +7,7 @@ var text = "*is being developed*\n" +
 
 // Back button
 var keyboard = [
-    [{text: "◀  Back", callback_data: "/git"}, {text: "HOME", callback_data: "/start"}]
+    [{text: "◀  Back", callback_data: "/start"}]
 ];
 
 Bot.sendMessage(text, {
