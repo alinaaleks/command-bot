@@ -1,14 +1,16 @@
 var text = "*new branch*\n" +
 "`git checkout -b`\n\n" +
 
-"*switch*\n" +
-"`git switch`\n\n" +
+"*MERGE*\n" +
+"**1. switch to main:**  `git switch` | `git checkout`\n" +
+"**2.**  `git merge`\n\n" +
+
+"*list all*\n" +
+"`git branch`\n\n" +
 
 "*delete*\n" +
-"`git branch -d`\n\n" +
-
-"*delete (!with unmerged changes)*\n" +
-"`git branch -D`";
+"`git branch -d`\n" +
+"`git branch -D` **(!with unmerged changes)**";
 
 // Back button
 var keyboard = [
