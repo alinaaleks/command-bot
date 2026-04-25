@@ -7,9 +7,8 @@ var text = "*copy remote repo locally*\n" +
 "*list remotes*\n" +
 "`git remote -v`\n\n" +
 
-"*VARIOUS*\n" +
-"`git remote set-url origin <new-url>` ** ➜ change URL**\n" +
-"`git remote rename <old> <new>` ** ➜ rename remote**";
+"*change remote URL*\n" +
+"`git remote set-url origin <new-url>`";
 
 // Back button
 var keyboard = [

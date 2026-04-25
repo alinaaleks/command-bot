@@ -3,6 +3,8 @@ var text = "*is being developed*\n" +
 "`cd`\n" +
 "`ls`\n" +
 "`touch`\n" +
+"`mkdir`\n" +
+"`mv old_name new_name`\n" +
 "`start`";
 
 // Back button
