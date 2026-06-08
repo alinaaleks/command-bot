@@ -1,20 +1,25 @@
-var text = "*need to switch branches urgently*\n" +
-"`git stash push -m \"WIP: half-finished function\"`\n\n" +
-"**then  ➜ ** `git stash pop`\n\n" +
+var text = "*create with message*\n" +
+"`git stash push -m \"WIP: la la la\"`\n\n" +
+
+"*list all stashes*\n" +
+"`git stash list`\n\n" +
+
+"*show detailed changes in latest*\n" +
+"`git stash show -p`\n\n" +
+
+"*apply changes*\n" +
+"`git stash apply` **(➜ keeps in stash!)**\n" +
+"`git stash pop` **(➜ removes from stash!)**\n\n" +
 
 "*apply stash to different branch*\n" +
 "`git stash`\n" +
 "`git checkout branch-b`\n" +
 "`git stash apply`\n\n" +
-
-"*compare stash with current work*\n" +
-"`git stash show -p`\n\n" +
-
-"*list all stashes*\n" +
-"`git stash list`\n\n" +
   
-"*show detailed changes in latest stash*\n" +
-"`git stash show -p`";
+"*DELETE*\n" +
+"`git stash drop` **(newest)**\n" +
+"`git stash drop 2 / stash@{2}` **(by index or exact)**\n" +
+"`git stash clear` **(ALL stashes)**";
 
 // Back button
 var keyboard = [
