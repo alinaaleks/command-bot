@@ -1,5 +1,13 @@
 # 📌 Command Bot
 
+<p>
+  <img 
+    src="/run-bot-demo.gif" 
+    alt="Иллюстрация работы бота" 
+    width="600" 
+    height="auto">
+</p>
+
 ### 🇷🇺 Описание
 
 Telegram-бот для быстрого доступа к командам и горячим клавишам (Git, CLI, Python, Conda, веб-разработка).
