@@ -13,7 +13,10 @@ var text = "*UNSTAGE*\n" +
 "`git reset HEAD~1`\n\n" +
   
 "*UNDO CHANGES*\n" +
-"`git restore` ** ➜  revert to last commit (!changes lost)**";
+"`git restore .` ** ➜  revert to last commit (!changes lost)**\n" +
+"`git clean -f` ** ➜  remove untracked files**";
+
+
 
 // Back button
 var keyboard = [
