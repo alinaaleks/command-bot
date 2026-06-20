@@ -1,17 +1,12 @@
-var text = "*is being developed*\n" +
-"`conda activate myenv`\n" +
-"`conda info --envs` <= list envs\n" +
-"`conda env list`\n" +
-"`conda create --name <my-env>`";
-
-// Back button
 var keyboard = [
-    [{text: "◀  Back", callback_data: "/start"}]
+    [{text: "ENVs", callback_data: "/condaenvs"}],
+    [{text: "🔎  Search", callback_data: "/search"}],
+    [{text: "HOME", callback_data: "/start"}]
 ];
 
-Bot.sendMessage(text, {
-    parse_mode: "Markdown",
+Bot.sendMessage("TOPICS:", {
     reply_markup: {
         inline_keyboard: keyboard
-    }
+    },
+    parse_mode: "Markdown"
 });
