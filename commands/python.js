@@ -1,6 +1,7 @@
 var keyboard = [
-    [{text: "Explore dataset", callback_data: "/pythonexplore"}, {text: "Other", callback_data: "/python"}],
-    [{text: "Block 1", callback_data: "/python"}, {text: "Block 2", callback_data: "/python"}],
+    [{text: "Imports", callback_data: "/pythonimport"}, {text: "EDA", callback_data: "/pythoneda"}],
+    [{text: "Missing Values", callback_data: "/pythonmissing"}, {text: "Duplicates", callback_data: "/pythonduplicates"}],
+    [{text: "Type Fixes", callback_data: "/pythontupes"}, {text: "Visuals", callback_data: "/pythonvisuals"}],
     [{text: "🔎  Search", callback_data: "/search"}],
     [{text: "HOME", callback_data: "/start"}]
 ];
